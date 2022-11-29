@@ -582,6 +582,9 @@ a {
   .cover__button a:last-child {
     padding-left: 16px;
   }
+  .section--cover {
+    background-size: cover;
+  }
   .btn {
     padding: 14px 24px;
     font-size: 14px;
@@ -730,7 +733,7 @@ a {
     background-size: cover;
   }
   .care {
-    padding: 0px 196px;
+    padding: 0px 96px;
   }
   .section--care {
     background-size: cover;
@@ -811,6 +814,12 @@ a {
   }
   .service__main h4 {
     font-size: 12px;
+  }
+  .service__button {
+    padding-top: 40px;
+  }
+  .service__main img {
+    max-width: 30px;
   }
   .health__img {
     text-align: center;

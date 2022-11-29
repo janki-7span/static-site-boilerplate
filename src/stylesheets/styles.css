@@ -107,6 +107,7 @@ a {
 .nav__items a {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 .nav__items p {
   font-weight: 600;

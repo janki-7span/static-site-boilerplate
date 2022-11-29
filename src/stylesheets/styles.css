@@ -574,10 +574,38 @@ a {
 
 @media screen and (max-width: 1024px) {
   p {
-    font-size: 13px;
+    font-size: 20px;
   }
   h1, h2 {
     font-size: 58px;
+  }
+  .site__logo {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  .nav__items {
+    flex: 0 0 28%;
+    max-width: 28%;
+  }
+  .site__logo img {
+    max-width: 26%;
+  }
+  .header__menu {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .col-50 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .cover {
+    flex-direction: column-reverse;
+    padding-top: 118px;
+  }
+  .nav__links {
+    justify-content: center;
+    padding-top: 22px;
   }
   .cover__button a:last-child {
     padding-left: 16px;
@@ -603,6 +631,29 @@ a {
   }
   .above__wrap img {
     max-width: 50px;
+  }
+  .above__wrap {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 40px;
+  }
+  .found-img img {
+    max-width: 40%;
+    padding-top: 49px;
+  }
+  .found__button a img {
+    max-width: 13px;
+  }
+  .facilitate__img img {
+    max-width: 45%;
+    padding-bottom: 29px;
+  }
+  .health__img img {
+    max-width: 54%;
+  }
+  .health__img {
+    text-align: center;
+    padding-top: 40px;
   }
   .above__main {
     padding: 50px 37px;
@@ -639,7 +690,7 @@ a {
     padding-top: 35px;
   }
   .care {
-    padding: 0px 268px;
+    padding: 0px 68px;
   }
   .care p {
     line-height: 26px;
@@ -650,6 +701,9 @@ a {
   }
 }
 @media screen and (max-width: 769px) {
+  p {
+    font-size: 16px;
+  }
   .nav__items p {
     font-size: 12px;
   }
@@ -662,6 +716,9 @@ a {
   .btn {
     padding: 8px 12px;
     font-size: 11px;
+  }
+  .cover {
+    padding-top: 81px;
   }
   .section--cover {
     background-size: cover;
@@ -733,11 +790,33 @@ a {
     background-size: cover;
   }
   .care {
-    padding: 0px 96px;
+    padding: 0px 0;
   }
   .section--care {
     background-size: cover;
     padding: 68px 0 54px 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  p {
+    font-size: 14px;
+  }
+  .nav__items {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  h1, h2 {
+    font-size: 40px;
+  }
+  .cover__img img {
+    max-width: 46%;
+  }
+  .cover {
+    padding-top: 51px;
+  }
+  .team__img {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -753,38 +832,27 @@ a {
   .section--cover {
     background-size: cover;
   }
-  .site__logo {
-    flex: 0 0 100%;
-    max-width: 100%;
-    text-align: center;
-  }
-  .nav__items {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  .site__logo img {
-    max-width: 40%;
-  }
-  .header__menu {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
   .col-50 {
     flex: 0 0 100%;
     max-width: 100%;
-    padding-top: 38px;
   }
   .section--cover {
-    padding: 100px 0 0 0;
+    padding: 100px 0 58px 0;
     background-size: cover;
+  }
+  .cover {
+    padding-top: 26px;
+  }
+  .cover__img img {
+    max-width: 60%;
   }
   .section--found {
     background-size: cover;
-    padding: 0 0 40px 0;
+    padding: 52px 0 40px 0;
   }
   .section--facilitate {
     background-size: cover;
-    padding: 0 0 50px 0;
+    padding: 52px 0 50px 0;
   }
   .section--health {
     background-size: cover;
@@ -798,6 +866,7 @@ a {
   .above__wrap {
     flex: 0 0 100%;
     max-width: 100%;
+    margin-bottom: 0;
   }
   .above__main {
     margin: 10px 0;
@@ -825,7 +894,13 @@ a {
     text-align: center;
   }
   .section--health {
-    padding: 0px 0 60px 0;
+    padding: 52px 0 60px 0;
+  }
+  .found-img img {
+    max-width: 68%;
+  }
+  .facilitate__img img {
+    max-width: 60%;
   }
   .testimonial__wrap {
     flex: 0 0 100%;
@@ -846,12 +921,11 @@ a {
   .team__heading h6 {
     margin-bottom: 10px;
   }
-  .team__img {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
   .section--team {
     padding: 10px 0 46px 0;
+  }
+  .health__img img {
+    max-width: 80%;
   }
   .team__img h5 {
     margin-top: 6px;

@@ -8,7 +8,8 @@ body {
   box-sizing: border-box;
 }
 
-h1, h2 {
+h1,
+h2 {
   margin: 0;
   font-weight: 800;
   font-size: 78px;
@@ -42,7 +43,8 @@ p {
   padding: 0 15px;
 }
 
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -84,7 +86,7 @@ a {
   padding: 0 15px;
 }
 .site__logo img {
-  max-width: 166px;
+  max-width: 24%;
 }
 
 .header__menu {
@@ -576,7 +578,8 @@ a {
   p {
     font-size: 20px;
   }
-  h1, h2 {
+  h1,
+h2 {
     font-size: 58px;
   }
   .site__logo {
@@ -589,7 +592,7 @@ a {
     max-width: 28%;
   }
   .site__logo img {
-    max-width: 166px;
+    max-width: 26%;
   }
   .header__menu {
     flex: 0 0 100%;
@@ -707,7 +710,8 @@ a {
   .nav__items p {
     font-size: 12px;
   }
-  h1, h2 {
+  h1,
+h2 {
     font-size: 46px;
   }
   .cover__content p {
@@ -805,7 +809,8 @@ a {
     flex: 0 0 50%;
     max-width: 50%;
   }
-  h1, h2 {
+  h1,
+h2 {
     font-size: 40px;
   }
   .cover__img img {
@@ -820,7 +825,8 @@ a {
   }
 }
 @media screen and (max-width: 480px) {
-  h1, h2 {
+  h1,
+h2 {
     font-size: 36px;
   }
   h6 {

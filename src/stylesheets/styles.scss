@@ -1,2 +1,1226 @@
-// Load CSS Reset from NPM
-@import "~normalize.css"
+// Add your styles here
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+// Comman Css Styles
+
+h1,
+h2 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 78px;
+    line-height: 120.5%;
+    letter-spacing: -0.03em;
+    text-transform: capitalize;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120.5%;
+    letter-spacing: 0.665em;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-50 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+$bg-darkblue: #090956;
+$skyblue: #48CAE4;
+$white: #FFFFFF;
+
+// header start
+.header--main {
+    position: absolute;
+    width: 100%;
+    z-index: 11;
+}
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    padding: 15px;
+    align-items: center;
+}
+
+.site__logo {
+    flex: 0 0 55%;
+    max-width: 55%;
+    padding: 0 15px;
+
+    img {
+        max-width: 24%;
+    }
+}
+
+.header__menu {
+    flex: 0 0 45%;
+    max-width: 45%;
+    padding: 0 15px;
+}
+
+.nav__links {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.nav__items {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+
+    a {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    p {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120.5%;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    img {
+        max-width: 20px;
+    }
+}
+
+// header over
+
+// cover css start
+.section--cover {
+    background-image: url(../images/banner.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 100px 0 80px 0;
+}
+
+.cover {
+    align-items: center;
+}
+
+.cover__content {
+    h6 {
+        color: $skyblue;
+    }
+
+    h1 span {
+        color: $skyblue;
+    }
+
+    h1 {
+        color: $white;
+    }
+
+    p {
+        color: #CBCBCE
+    }
+}
+
+.cover__img {
+    text-align: center;
+
+    img {
+        max-width: 88%;
+    }
+}
+
+.btn {
+    cursor: pointer;
+    background: $skyblue;
+    border: 1px solid $skyblue;
+    border-radius: 50px;
+    padding: 18px 24px;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 120.5%;
+    transition: all .5s ease-in-out;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: $skyblue;
+    border: 1px solid $skyblue;
+}
+
+.btn--solid {
+    background: none;
+    color: #FFFFFF;
+    border: none;
+    padding: 0;
+}
+
+.btn--solid:hover {
+    border: none;
+}
+
+.cover__button img {
+    max-width: 10px;
+}
+
+.cover__button a:last-child {
+    padding-left: 47px;
+}
+
+// cover css over
+
+// above css start
+.section--above {
+    padding: 60px 0 100px;
+}
+
+.above__heading {
+    text-align: center;
+    color: $bg-darkblue;
+}
+
+.above__wrap {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+
+    img {
+        max-width: 64px;
+    }
+}
+
+.above__content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+    text-align: center;
+}
+
+.above__main {
+    border: 1px solid rgba(9, 9, 86, 0.15);
+    border-radius: 20px;
+    padding: 50px 61px;
+
+    h4 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 120.5%;
+        text-align: center;
+        text-transform: capitalize;
+        color: #090956;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        color: #525252;
+    }
+}
+
+// above css over
+
+// founde css start
+.section--service {
+    padding: 30px 0 80px;
+}
+
+.section--found {
+    background-image: url(../images/found-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0 80px 0;
+}
+
+.found-img {
+    text-align: center;
+
+    img {
+        max-width: 82%;
+    }
+}
+
+.found__button img {
+    max-width: 10px;
+}
+
+.button {
+    background: none;
+    color: $bg-darkblue;
+    border: none;
+    padding: 20px 0;
+}
+
+.found__content {
+
+    h6 {
+        color: $bg-darkblue;
+    }
+
+    h2 {
+        color: $bg-darkblue;
+    }
+
+    h2 span {
+        color: $skyblue;
+    }
+
+    p {
+        line-height: 32px;
+        color: #525252;
+    }
+
+}
+
+// found css over
+
+// sercice css start
+.service__heading {
+    padding: 0 84px;
+
+    h6 {
+        text-align: center;
+        letter-spacing: 0.665em;
+        color: #090956;
+    }
+
+    h2 {
+        text-align: center;
+        color: $bg-darkblue;
+    }
+
+    h2 span {
+        color: $skyblue;
+    }
+}
+
+.service__content {
+    text-align: center;
+}
+
+.service__main {
+    box-shadow: 0px 26px 100px rgba(72, 202, 228, 0.13);
+    border-radius: 20px;
+    padding: 81px 78px;
+    min-height: 100%;
+
+    img {
+        max-width: 44px;
+    }
+
+    h4 {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 142.5%;
+        text-align: center;
+        text-transform: capitalize;
+        color: $bg-darkblue;
+    }
+}
+
+.service__wrap {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+    margin-top: 100px;
+}
+
+.btn--lg {
+    background: $bg-darkblue;
+    color: $white;
+    border: 1px solid $bg-darkblue;
+    margin-left: 26px
+}
+
+.btn--lg:hover {
+    border: 1px solid $bg-darkblue;
+    background: transparent;
+    color: $bg-darkblue;
+}
+
+.service__button {
+    padding-top: 80px;
+    text-align: center;
+}
+
+// service css over
+
+// facilitate css start
+.section--facilitate {
+    background-image: url(../images/facility-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0 100px 0;
+}
+
+.facilitate__img {
+    text-align: center;
+
+    img {
+        max-width: 82%;
+        padding-top: 29px;
+    }
+
+}
+
+.facilitate__content {
+
+    h6 {
+        color: $white;
+    }
+
+    h2 {
+        text-transform: capitalize;
+        color: $white;
+    }
+
+    h2 span {
+        color: $skyblue;
+    }
+
+    p {
+        color: #CBCBCE;
+    }
+}
+
+// facilitate css over
+
+// health css start
+.section--health {
+    background-image: url(../images/health-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0 100px 0;
+}
+
+.health__content {
+    h6 {
+        color: $white;
+    }
+
+    h2 {
+        color: $white;
+    }
+
+    p {
+        color: $white;
+        line-height: 28px;
+    }
+}
+
+.health__img {
+
+    img {
+        max-width: 85%;
+    }
+}
+
+// health css over
+
+// testimonial css start
+.section--testimonial {
+    padding: 70px 0;
+}
+
+.testimonial__heading {
+    text-align: center;
+    padding-bottom: 24px;
+
+    h6 {
+        color: $bg-darkblue;
+    }
+
+    h2 {
+        color: $bg-darkblue;
+    }
+
+    h2 span {
+        color: $skyblue;
+    }
+}
+
+.testimonial__wrap {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.testimonial__main {
+    border: 1px solid rgba(9, 9, 86, 0.15);
+    border-radius: 17.315px;
+    padding: 24px;
+    margin-top: 56px;
+
+    img {
+        max-width: 38px;
+    }
+
+    h4 {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 34px;
+        color: $bg-darkblue;
+    }
+}
+
+.testimonial__customer {
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial__text {
+    padding-left: 20px;
+
+    h5 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        color: $bg-darkblue;
+        margin: 0;
+    }
+}
+
+.testimonial__img {
+
+    img {
+        max-width: 50px;
+    }
+}
+
+// testimonial css over
+
+// team css start
+.section--team {
+    background-image: url(../images/team-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 68px 0 58px 0;
+}
+
+.team__wrap {
+    justify-content: center;
+}
+
+.team__heading {
+    padding-bottom: 88px;
+    text-align: center;
+
+    h6 {
+        color: $bg-darkblue;
+    }
+
+    h2 {
+        color: $bg-darkblue;
+    }
+
+    h2 span {
+        color: $skyblue;
+    }
+}
+
+.team__img {
+    flex: 0 0 28.33%;
+    max-width: 28.33%;
+    padding: 0 15px;
+    text-align: center;
+
+    img {
+        max-width: 92%;
+    }
+
+    h5 {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 120.5%;
+        color: $bg-darkblue;
+    }
+}
+
+.team__button {
+    text-align: center;
+    padding-top: 68px;
+}
+
+// team css over
+
+// care css start
+.section--care {
+    padding: 80px 0;
+    background-image: url(../images/care-bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 68px 0 58px 0;
+}
+
+.care {
+    text-align: center;
+    padding: 0px 290px;
+
+
+    h6 {
+        color: $skyblue;
+    }
+
+    p {
+        color: #CBCBCE;
+    }
+
+    h2 {
+        color: $white;
+    }
+
+    h2 span {
+        color: $skyblue;
+    }
+}
+
+.care__button {
+    text-align: center;
+    padding-top: 33px;
+}
+
+// care css  over
+
+// footer css start
+.footer--footer {
+    padding: 30px 0;
+}
+
+.footer {
+    align-items: center;
+}
+
+.footer__logo {
+    flex: 0 0 30%;
+    max-width: 30%;
+    padding: 0 15px;
+    text-align: center;
+
+    img {
+        max-width: 60%;
+    }
+}
+
+.footer__wrapper {
+    flex: 0 0 70%;
+    max-width: 70%;
+    padding: 0 15px;
+}
+
+.footer__insta {
+    padding: 0 15px;
+
+    img {
+        max-width: 38px;
+    }
+}
+
+.footer__fb {
+    padding: 0 15px;
+
+    img {
+        max-width: 38px;
+    }
+}
+
+.footer__icon {
+    justify-content: end;
+    padding-right: 98px;
+}
+
+// footer css over
+
+
+
+
+// responsive start
+@media screen and (max-width: 1024px) {
+    p {
+        font-size: 20px;
+    }
+
+    h1,
+    h2 {
+        font-size: 58px;
+    }
+
+    .site__logo {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .nav__items {
+        flex: 0 0 28%;
+        max-width: 28%;
+    }
+
+    .site__logo img {
+        max-width: 26%;
+    }
+
+    .header__menu {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-50 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .cover {
+        flex-direction: column-reverse;
+        padding-top: 118px;
+    }
+
+    .nav__links {
+        justify-content: center;
+        padding-top: 22px;
+    }
+
+    .cover__button a:last-child {
+        padding-left: 16px;
+    }
+
+    .section--cover {
+        background-size: cover;
+    }
+
+    .btn {
+        padding: 14px 24px;
+        font-size: 14px;
+    }
+
+    h6 {
+        font-size: 13px;
+    }
+
+    .cover__img img {
+        max-width: 72%;
+    }
+
+    .btn--solid {
+        padding: 10px;
+    }
+
+    .nav__items p {
+        font-size: 14px;
+    }
+
+    .above__wrap img {
+        max-width: 50px;
+    }
+
+    .above__wrap {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 40px;
+    }
+
+    .found-img img {
+        max-width: 40%;
+        padding-top: 49px;
+    }
+
+    .found__button a img {
+        max-width: 13px;
+    }
+
+    .facilitate__img img {
+        max-width: 45%;
+        padding-bottom: 29px;
+    }
+
+    .health__img img {
+        max-width: 54%;
+    }
+
+    .health__img {
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .above__main {
+        padding: 50px 37px;
+    }
+
+    .above__main h4 {
+        font-size: 26px;
+    }
+
+    .section--found {
+        padding: 50px 0 80px 0;
+    }
+
+    .service__main {
+        padding: 30px 46px;
+    }
+
+    .service__wrap {
+        margin-top: 30px;
+    }
+
+    .service__main h4 {
+        font-size: 23px;
+    }
+
+    .section--health {
+        background-size: cover;
+    }
+
+    .testimonial__main h4 {
+        font-size: 13px;
+        line-height: 28px;
+    }
+
+    .team__heading {
+        padding-bottom: 64px;
+    }
+
+    .section--team {
+        padding: 33px 0 70px 0;
+    }
+
+    .team__button {
+        padding-top: 35px;
+    }
+
+    .care {
+        padding: 0px 68px;
+    }
+
+    .care p {
+        line-height: 26px;
+    }
+
+    .section--care {
+        background-size: cover;
+        padding: 68px 0 79px 0;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    p {
+        font-size: 16px;
+    }
+
+    .nav__items p {
+        font-size: 12px;
+    }
+
+    h1,
+    h2 {
+        font-size: 46px;
+    }
+
+    .cover__content p {
+        line-height: 27px;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+
+    .cover {
+        padding-top: 81px;
+    }
+
+    .section--cover {
+        background-size: cover;
+    }
+
+    .section--above {
+        padding: 0px 0 67px;
+    }
+
+    .above__main h4 {
+        font-size: 22px;
+    }
+
+    .above__main {
+        padding: 24px 27px;
+    }
+
+    .found__content h6 {
+        margin: 0;
+        padding-bottom: 8px;
+    }
+
+    .found__content p {
+        line-height: 22px;
+    }
+
+    .section--found {
+        padding: 50px 0 40px 0;
+        background-size: cover;
+    }
+
+    .service__wrap {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .service__main h4 {
+        font-size: 20px;
+    }
+
+    .facilitate__content h6 {
+        margin: 0;
+        padding-bottom: 6px;
+    }
+
+    .facilitate__content p {
+        line-height: 25px;
+    }
+
+    .facilitate__img img {
+        padding-top: 0px;
+    }
+
+    .section--facilitate {
+        padding: 61px 0 50px 0;
+    }
+
+    .health__content h6 {
+        margin: 0;
+        padding-bottom: 6px;
+    }
+
+    .health__content p {
+        line-height: 22px;
+    }
+
+    .section--health {
+        padding: 76px 0 100px 0;
+    }
+
+    .section--testimonial {
+        padding: 0px 0 86px;
+    }
+
+    .testimonial__wrap {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .testimonial__main {
+        margin-top: 30px;
+    }
+
+    .team__button {
+        padding-top: 22px;
+    }
+
+    .section--team {
+        background-size: cover;
+    }
+
+    .care {
+        padding: 0px 0;
+    }
+
+    .section--care {
+        background-size: cover;
+        padding: 68px 0 54px 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    p {
+        font-size: 14px;
+    }
+
+    .nav__items {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    h1,
+    h2 {
+        font-size: 40px;
+    }
+
+    .cover__img img {
+        max-width: 46%;
+    }
+
+    .cover {
+        padding-top: 51px;
+    }
+
+    .team__img {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+    h1,
+    h2 {
+        font-size: 36px;
+    }
+
+    h6 {
+        font-size: 11px;
+    }
+
+    .nav__links {
+        padding-top: 10px;
+    }
+
+    .section--cover {
+        background-size: cover;
+    }
+
+    .col-50 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .section--cover {
+        padding: 100px 0 58px 0;
+        background-size: cover;
+    }
+
+    .cover {
+        padding-top: 26px;
+    }
+
+    .cover__img img {
+        max-width: 60%;
+    }
+
+    .section--found {
+        background-size: cover;
+        padding: 52px 0 40px 0;
+    }
+
+    .section--facilitate {
+        background-size: cover;
+        padding: 52px 0 50px 0;
+    }
+
+    .section--health {
+        background-size: cover;
+    }
+
+    .section--team {
+        background-size: cover;
+    }
+
+    .section--care {
+        background-size: cover;
+    }
+
+    .above__wrap {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 0;
+    }
+
+    .above__main {
+        margin: 10px 0;
+    }
+
+    .service__main {
+        padding: 10px 0px;
+    }
+
+    .service__heading {
+        padding: 0 0px;
+    }
+
+    .service__wrap {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .service__main h4 {
+        font-size: 12px;
+    }
+
+    .service__button {
+        padding-top: 40px;
+    }
+
+    .service__main img {
+        max-width: 30px;
+    }
+
+    .health__img {
+        text-align: center;
+    }
+
+    .section--health {
+        padding: 52px 0 60px 0;
+    }
+
+    .found-img img {
+        max-width: 68%;
+    }
+
+    .facilitate__img img {
+        max-width: 60%;
+    }
+
+    .testimonial__wrap {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .testimonial__main {
+        margin-top: 15px;
+    }
+
+    .testimonial__heading h6 {
+        margin-bottom: 10px;
+    }
+
+    .section--testimonial {
+        padding: 0px 0 50px;
+    }
+
+    .team__heading {
+        padding-bottom: 46px;
+    }
+
+    .team__heading h6 {
+        margin-bottom: 10px;
+    }
+
+    .section--team {
+        padding: 10px 0 46px 0;
+    }
+
+    .health__img img {
+        max-width: 80%;
+    }
+
+    .team__img h5 {
+        margin-top: 6px;
+        font-size: 14px;
+    }
+
+    .care {
+        padding: 0px 0px;
+    }
+
+    .section--care {
+        padding: 29px 0 32px 0;
+    }
+
+    .care__button {
+        padding-top: 8px;
+    }
+
+    .footer__wrapper {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .footer__logo {
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: start;
+    }
+
+    .footer__icon {
+        padding-right: 0px;
+    }
+
+    .footer__insta {
+        padding: 0 8px;
+    }
+
+    .footer__fb {
+        padding: 0 8px;
+    }
+
+    .footer__insta img {
+        max-width: 30px;
+    }
+
+    .footer__fb img {
+        max-width: 30px;
+    }
+
+    .footer--footer {
+        padding: 16px 0;
+    }
+
+    .footer__logo img {
+        max-width: 74%;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    .nav__items p {
+        font-size: 11px;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 8px;
+        margin-bottom: 20px;
+    }
+
+    .footer__logo img {
+        max-width: 90%;
+    }
+}
+
+// responsive end

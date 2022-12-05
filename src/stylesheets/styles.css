@@ -84,7 +84,7 @@ a {
   padding: 0 15px;
 }
 .site__logo img {
-  max-width: 24%;
+  max-width: 166px;
 }
 
 .header__menu {
@@ -589,7 +589,7 @@ a {
     max-width: 28%;
   }
   .site__logo img {
-    max-width: 26%;
+    max-width: 166px;
   }
   .header__menu {
     flex: 0 0 100%;
